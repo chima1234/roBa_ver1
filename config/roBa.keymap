@@ -90,21 +90,32 @@
 
         Mac {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R             &kp T                                                          &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z         &kp X      &kp C         &kp V             &kp B        &kp COLON                          &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 6 INT_HENKAN  &lt 0 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE  &lt 2 ENTER                             &kp DEL
+&kp Q         &kp W      &kp E         &kp R             &kp T                                                        &kp Y        &kp U  &lt 0 I    &kp O    &kp P
+&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp Z         &kp X      &kp C         &kp V             &kp B        &lt 4 SEMICOLON                  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Win {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R               &kp T                                                        &kp Y        &kp U  &lt 0 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X         &kp C         &kp V               &kp B        &kp COLON                        &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 INT_MUHENKAN  &lt 0 SPACE  &lt_to_layer_0 4 INT_HENKAN      &kp BACKSPACE  &lt 2 ENTER                             &kp ESCAPE
+&kp Z      &kp X         &kp C         &kp V               &kp B        &kp SEMICOLON                    &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 INT_MUHENKAN  &lt 0 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp ESCAPE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        ipad {
+            bindings = <
+&kp Q      &kp W         &kp E         &kp R               &kp T                                                        &kp Y        &kp U  &lt 0 I    &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp Z      &kp X         &kp C         &kp V               &kp B        &kp SEMICOLON                    &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 INT_MUHENKAN  &lt 0 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -117,6 +128,8 @@
 &kp F11  &kp F12  &trans  &trans  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &trans   &trans  &trans  &trans   &trans      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         Num {
@@ -128,6 +141,15 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        SCLOLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
         };
 
         ARROW {
