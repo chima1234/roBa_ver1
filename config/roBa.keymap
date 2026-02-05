@@ -91,10 +91,10 @@
 
         Mac {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R             &kp T                                            &kp Y             &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))        &kp MINUS      &kp H             &kp J  &kp K      &kp L    &kp ENTER
-&kp Z         &kp X      &kp C         &kp V             &kp B        &lt 6 LA(SPACE)      &kp B          &kp N             &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &lt 3 TAB            &kp BACKSPACE  &lt 4 LANGUAGE_1                             &kp ESC
+&kp Q         &kp W      &kp E         &kp R             &kp T                                          &kp Y             &kp U  &kp I      &kp O      &kp P
+&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))      &kp MINUS      &kp H             &kp J  &kp K      &kp L      &kp ENTER
+&kp Z         &kp X      &kp C         &kp V             &kp B        &kp LA(SPACE)      &kp B          &kp N             &kp M  &kp COMMA  &lt 7 DOT  &kp RIGHT_SHIFT
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 5 LANGUAGE_2  &lt 0 SPACE  &lt 3 TAB          &kp BACKSPACE  &lt 4 LANGUAGE_1                               &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -105,7 +105,7 @@
 &kp Q      &kp W         &kp E         &kp R               &kp T                                                 &kp Y             &kp U  &lt 0 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F               &kp G        &kp LS(LG(S))             &kp MINUS      &kp H             &kp J  &kp K      &kp L    &kp ENTER
 &kp Z      &kp X         &kp C         &kp V               &kp B        &kp SEMICOLON             &kp B          &kp N             &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 INT_MUHENKAN  &lt 0 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 3 INT_HENKAN                             &kp ESCAPE
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 0 SPACE  &lt_to_layer_0 5 TAB      &kp BACKSPACE  &lt 3 INT_HENKAN                             &kp ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -116,7 +116,7 @@
 &kp Q      &kp W         &kp E         &kp R             &kp T                                                 &kp Y             &kp U  &lt 0 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F             &kp G        &kp LS(LG(S))             &kp MINUS      &kp H             &kp J  &kp K      &kp L    &kp ENTER
 &kp Z      &kp X         &kp C         &kp V             &kp B        &kp SEMICOLON             &kp B          &kp N             &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 3 LANGUAGE_1                             &kp ESCAPE
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 7 LANGUAGE_2  &lt 0 SPACE  &lt_to_layer_0 5 TAB      &kp BACKSPACE  &lt 3 LANGUAGE_1                             &kp ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -142,15 +142,6 @@
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
-        };
-
-        SCLOLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &msc MOVE_Y(10)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &msc MOVE_X(10)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
-            >;
         };
 
         ARROW {
