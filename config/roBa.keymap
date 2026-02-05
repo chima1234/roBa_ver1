@@ -91,10 +91,10 @@
 
         Mac {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R             &kp T                                             &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))         &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp LA(SPACE)
-&kp Z         &kp X      &kp C         &kp V             &kp B        &lt 4 TAB             &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp DELETE
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &lt 3 LANGUAGE_1      &kp BACKSPACE  &lt 6 ENTER                             &kp ESC
+&kp Q         &kp W      &kp E         &kp R             &kp T                                        &kp Y             &kp U  &lt 0 I    &kp O    &kp P
+&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))      &kp MINUS    &kp H             &kp J  &kp K      &kp L    &kp LA(SPACE)
+&kp Z         &kp X      &kp C         &kp V             &kp B        &lt 6 TAB          &kp B        &kp N             &kp M  &kp COMMA  &kp DOT  &kp DELETE
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &kp BACKSPACE      &lt 3 ENTER  &lt 4 LANGUAGE_1                             &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
