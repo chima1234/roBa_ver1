@@ -99,10 +99,10 @@
 
         Mac {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R             &kp T                                                        &kp Y        &kp U  &lt 0 I    &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z         &kp X      &kp C         &kp V             &kp B        &lt 4 SEMICOLON                  &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &lt_to_layer_0 6 LANGUAGE_1      &kp BACKSPACE  &lt 3 ENTER                             &kp DEL
+&kp Q         &kp W      &kp E         &kp R             &kp T                                                 &kp Y             &kp U  &lt 0 I    &kp O    &kp P
+&kp A         &kp S      &kp D         &kp F             &kp G        &kp LS(LG(S))             &kp MINUS      &kp H             &kp J  &kp K      &kp L    &kp ENTER
+&kp Z         &kp X      &kp C         &kp V             &kp B        &lt 4 SEMICOLON           &kp B          &kp N             &kp M  &kp COMMA  &kp DOT  &kp LA(SPACE)
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 8 LANGUAGE_2  &lt 0 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 3 LANGUAGE_1                             &kp LS(LG(DEL))
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -116,7 +116,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 8 INT_MUHENKAN  &lt 0 SPACE  &lt_to_layer_0 6 INT_HENKAN      &kp BACKSPACE  &lt 3 ENTER                             &kp ESCAPE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ipad {
@@ -143,10 +143,10 @@
 
         Num {
             bindings = <
-&kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT                             &kp CARET       &kp N7  &kp N8  &kp N9  &kp SLASH
-&kp AMPERSAND    &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &trans      &kp AT_SIGN    &kp UNDERSCORE  &kp N4  &kp N5  &kp N6  &kp ASTERISK
-&kp HASH         &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERIOD   &trans      &kp BACKSLASH  &kp N0          &kp N1  &kp N2  &kp N3  &kp MINUS
-&trans           &trans        &trans                &trans                 &trans       &trans      &trans         &trans                                  &kp PLUS
+&kp EXCLAMATION  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT                                       &kp CARET       &kp N7  &kp N8  &kp N9  &kp SLASH
+&kp AMPERSAND    &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &trans                &kp AT_SIGN    &kp UNDERSCORE  &kp N4  &kp N5  &kp N6  &kp ASTERISK
+&kp HASH         &kp DOLLAR    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERIOD   &kp SINGLE_QUOTE      &kp BACKSLASH  &kp N0          &kp N1  &kp N2  &kp N3  &kp MINUS
+&trans           &trans        &trans                &trans                 &trans       &trans                &trans         &trans                                  &kp PLUS
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -154,10 +154,10 @@
 
         SCLOLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &msc MOVE_Y(10)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &msc MOVE_X(10)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
