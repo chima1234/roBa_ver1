@@ -84,6 +84,25 @@
 
             tap-ms = <20>;
         };
+        ek: eisu_kana {
+        compatible = "zmk,behavior-tap-dance";
+        label = "Eisu / Kana";
+        #binding-cells = <0>;
+        bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
+
+        tapping-term-ms = <250>;
+        };
+	st: scroll_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Scroll / Tap";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "balanced";
+        hold-while-undecided;
+    };
+
     };
 
     keymap {
