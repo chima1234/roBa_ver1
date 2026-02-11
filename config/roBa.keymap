@@ -64,6 +64,14 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        mac: mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>;
+
+            label = "MAC";
+        };
     };
 
     behaviors {
@@ -112,10 +120,10 @@
 
         Mac {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R  &kp T                                          &kp Y        &kp U  &kp I    &kp O      &kp P
-&kp A         &kp S      &kp D         &kp F  &kp G        &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &lt 6 K  &kp L      &trans
-&kp Z         &kp X      &kp C         &kp V  &kp B        &kp LA(SPACE)      &kp B          &kp N        &kp M  &trans   &lt 8 DOT  &kp RIGHT_SHIFT
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &ek    &lt 0 SPACE  &lt 3 TAB          &kp BACKSPACE  &lt 4 ENTER                             &kp ESC
+&kp Q         &kp W      &kp E         &kp R  &kp T                                          &kp Y        &kp U  &kp I      &kp O      &kp P
+&kp A         &kp S      &kp D         &kp F  &kp G        &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &lt 6 K    &kp L      &trans
+&kp Z         &kp X      &kp C         &kp V  &kp B        &kp LA(SPACE)      &kp B          &kp N        &kp M  &kp COMMA  &lt 8 DOT  &kp RIGHT_SHIFT
+&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &ek    &lt 0 SPACE  &lt 3 TAB          &kp BACKSPACE  &lt 4 ENTER                               &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
