@@ -6,7 +6,7 @@
 
 // 修正1: スクロール量を半分に変更 (100 -> 50)
 
-#define ZMK_MOUSE_POINTING_SCRL_VAL 50
+#define ZMK_MOUSE_POINTING_SCRL_VAL 25
 
 &mt {
     flavor = "balanced";
